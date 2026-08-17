@@ -24,7 +24,7 @@
     
     
       
-        <title>2. 개발환경 구축 - 협동로봇2</title>
+        <title>2. 개발환경 구축 - 두산로보틱스 AI로보틱스 엔지니어</title>
       
     
     
@@ -103,7 +103,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href=".." title="협동로봇2" class="md-header__button md-logo" aria-label="협동로봇2" data-md-component="logo">
+    <a href=".." title="두산로보틱스 AI로보틱스 엔지니어" class="md-header__button md-logo" aria-label="두산로보틱스 AI로보틱스 엔지니어" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"></path></svg>
@@ -117,7 +117,7 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            협동로봇2
+            두산로보틱스 AI로보틱스 엔지니어
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
@@ -187,13 +187,13 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="협동로봇2" class="md-nav__button md-logo" aria-label="협동로봇2" data-md-component="logo">
+    <a href=".." title="두산로보틱스 AI로보틱스 엔지니어" class="md-nav__button md-logo" aria-label="두산로보틱스 AI로보틱스 엔지니어" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"></path></svg>
 
     </a>
-    협동로봇2
+    두산로보틱스 AI로보틱스 엔지니어
   </label>
   
   <ul class="md-nav__list" data-md-scrollfix="">
@@ -539,7 +539,7 @@
   <span class="md-ellipsis">
     
   
-    4. Container
+    4. Container 구축
   
 
     
@@ -586,7 +586,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../utility/" class="md-nav__link">
+      <a href="../rokey_utility/" class="md-nav__link">
         
   
   
@@ -715,12 +715,11 @@
 <li>MSI Katana 노트북 IP, 개인 노트북 IP, Doosan Robot IP, RG2 Gripper IP address 확인  </li>
 <li>각 장비 별 어떤 방식으로 서로 연결되어 있는지 꼭 확인해보자!!! (Physical &amp; Logical Connection)  </li>
 <li>노트북 IP Address 설정  </li>
-<li>
-<p>설정 후 ping안되는 경우 네트워크 재시작 명령어 (cli 명령어)<br>
-    systemctl restart NetworkManager  </p>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../images/network_setting.png" data-desc-position="bottom"><img alt="alt text" src="../images/network_setting.png"></a>  </p>
-</li>
+<li>설정 후 ping안되는 경우 네트워크 재시작 명령어 (cli 명령어)  </li>
 </ul>
+<pre><code class="language-bash">systemctl restart NetworkManager    
+</code></pre>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../images/network_setting.png" data-desc-position="bottom"><img alt="alt text" src="../images/network_setting.png"></a>  </p>
 <h4 id="2-doosan-robot-onrobot-rg2-gripper-network">2. Doosan Robot과 ONROBOT RG2 Gripper Network 확인</h4>
 <ul>
 <li>노트북에서 Doosan Robot으로 ping 테스트 : ping 192.168.1.100  </li>

@@ -24,7 +24,7 @@
     
     
       
-        <title>1. 개발환경 설치 - 협동로봇2</title>
+        <title>1. 개발환경 설치 - 두산로보틱스 AI로보틱스 엔지니어</title>
       
     
     
@@ -103,7 +103,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href=".." title="협동로봇2" class="md-header__button md-logo" aria-label="협동로봇2" data-md-component="logo">
+    <a href=".." title="두산로보틱스 AI로보틱스 엔지니어" class="md-header__button md-logo" aria-label="두산로보틱스 AI로보틱스 엔지니어" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"></path></svg>
@@ -117,7 +117,7 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            협동로봇2
+            두산로보틱스 AI로보틱스 엔지니어
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
@@ -187,13 +187,13 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="협동로봇2" class="md-nav__button md-logo" aria-label="협동로봇2" data-md-component="logo">
+    <a href=".." title="두산로보틱스 AI로보틱스 엔지니어" class="md-nav__button md-logo" aria-label="두산로보틱스 AI로보틱스 엔지니어" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"></path></svg>
 
     </a>
-    협동로봇2
+    두산로보틱스 AI로보틱스 엔지니어
   </label>
   
   <ul class="md-nav__list" data-md-scrollfix="">
@@ -303,10 +303,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#2-add_bashrczip" class="md-nav__link">
+  <a href="#2-bashrc" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2. 설치 후 add_bashrc.zip 파일 다운로드
+        2. 설치 후 .bashrc 수정하기
       
     </span>
   </a>
@@ -528,7 +528,7 @@
   <span class="md-ellipsis">
     
   
-    4. Container
+    4. Container 구축
   
 
     
@@ -575,7 +575,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../utility/" class="md-nav__link">
+      <a href="../rokey_utility/" class="md-nav__link">
         
   
   
@@ -660,10 +660,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#2-add_bashrczip" class="md-nav__link">
+  <a href="#2-bashrc" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2. 설치 후 add_bashrc.zip 파일 다운로드
+        2. 설치 후 .bashrc 수정하기
       
     </span>
   </a>
@@ -690,14 +690,31 @@
 <h1 id="installation"><strong>Installation</strong></h1>
 <h4 id="1-install_bashzip">1. install_bash.zip 파일 다운로드</h4>
 <ul>
-<li>압축 풀고 a01.sh부터 a11.sh까지 번호 순으로 Terminal 창에서 실행<br>
-<a href="downloads/install_bash.zip">install_bash.zip</a></li>
+<li>압축 풀고 a01.sh부터 a11.sh까지 번호 순으로 Terminal 창에서 실행  </li>
+<li><a href="../downloads/install_bash.zip">install_bash.zip</a></li>
 </ul>
-<h4 id="2-add_bashrczip">2. 설치 후 add_bashrc.zip 파일 다운로드</h4>
+<h4 id="2-bashrc">2. 설치 후 .bashrc 수정하기</h4>
 <ul>
-<li>압축 풀고 txt에서 내용 복사하고 .bashrc 아래 쪽에 붙여넣기<br>
-<a href="downloads/add_bashrc.zip">add_bashrc.zip</a></li>
+<li>.bashrc 아래 쪽에 붙여넣기  </li>
 </ul>
+<pre><code class="language-bash">source /opt/ros/jazzy/setup.bash
+source /usr/share/colcon_argcomplete/hook/colcon-argcomplete.bash
+export RMW_IMPLEMENTATION=rmw_cyclonedds_cpp
+export CYCLONEDDS_URI="file://$HOME/.config/cyclonedds/cyclonedds.xml"
+export ROS_DOMAIN_ID=99
+
+alias r='cd ~/cobot2_ws'
+alias s="source ~/cobot2_ws/install/setup.bash; echo \"source ~/cobot2_ws/install/setup.bash\""
+
+alias roboton="ros2 launch m0609_rg2_bringup bringup.launch.py mode:=real host:=192.168.1.100"
+alias realsense="ros2 run realsense2_camera realsense2_camera_node --ros-args \
+  -r __ns:=/ -r __node:=camera \
+  -p enable_color:=true -p enable_depth:=true \
+  -p depth_module.depth_profile:=848x480x30 -p rgb_camera.color_profile:=1280x720x30 \
+  -p align_depth.enable:=true -p enable_rgbd:=true -p enable_sync:=true \
+  -p pointcloud.enable:=true -p pointcloud.stream_filter:=2 \
+  -p enable_accel:=false -p enable_gyro:=false -p initial_reset:=true"  
+</code></pre>
 
 
 
