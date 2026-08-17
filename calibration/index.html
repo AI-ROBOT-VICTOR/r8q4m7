@@ -602,16 +602,53 @@
 
 <h1 id="calibration"><strong>Calibration</strong></h1>
 <ol>
-<li>home/corecode/Calibration_Tutorial 디렉토리로 이동 </li>
-<li>Doosan Robot Bringup 실행하기(roboton alias 실행)  </li>
-<li>직접 교시 모드 service call 실행  </li>
-<li>data_recording.py 실행하기  </li>
-<li>화면 영상 Color가 보이도록 Device Number 수정  </li>
-<li>Checker Board 사진 20장 이상 촬영하기  </li>
-<li>handeye_calibratio.py 실행  </li>
-<li>T_gripper2camera.npy 파일 생성되었는지 확인  </li>
-<li>verify.py 실행해서 마우스로 화면 click하면 해당 위치로 로봇이 움직이는지 확인  </li>
-</ol>
+<li>home/corecode/Calibration_Tutorial 디렉토리로 이동</li>
+
+<li>
+Doosan Robot Bringup과 Realsense alias 실행하기
+<ul>
+<li><strong>Terminal 창 1</strong> : <code>roboton</code> alias 실행</li>
+<li><strong>Terminal 창 2</strong> : <code>realsense</code> alias 실행</li>
+<li><strong>Terminal 창 3</strong> : service call 실행(직접 교시 모드 Service call)</li>
+</ul>
+
+
+<pre><code class="language-bash">ros2 service call /dsr01/system/set_robot_mode dsr_msgs2/srv/SetRobotMode "robot_mode: 0"
+</code></pre>
+
+</li>
+<li>data_recording.py 실행하기</li>
+<li>화면 영상 Color가 보이도록 Device Number 수정</li>
+<ul>
+<li>디바이스 번호 확인 명령어</li>
+</ul>
+
+
+<pre><code class="language-bash">v4l2-ctl --list-devices
+</code></pre>
+
+<ul>
+<li>번호에 대한 디바이스 정보 명령어</li>
+</ul>
+
+<pre><code class="language-bash">v4l2-ctl -d /dev/video0 --get-fmt-video  
+</code></pre>
+
+<li>data_recording.py 실행하기</li>
+<li>화면 영상 Color가 보이도록 Device Number 수정
+</li><li>
+data_recording.py 실행하기
+
+<br>
+
+<a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="images/calibration.png" data-desc-position="bottom"><img src="images/calibration.png" alt="calibration" width="600" data-no-glightbox=""></a>
+
+</li>
+
+<li>Checker Board 사진 20장 이상 촬영하기</li>
+<li>handeye_calibratio.py 실행</li>
+<li>T_gripper2camera.npy 파일 생성되었는지 확인</li>
+<li>verify.py 실행해서 마우스로 화면 click하면 해당 위치로 로봇이 움직이는지 확인</li></ol>
 
 
 
@@ -661,7 +698,7 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": [], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["content.code.copy"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
       <script src="../assets/javascripts/bundle.d7400e89.min.js"></script>
