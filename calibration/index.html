@@ -308,6 +308,34 @@
   
   
     <li class="md-nav__item">
+      <a href="../corecode/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Corecode 구조
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../modbus/" class="md-nav__link">
         
   
@@ -345,24 +373,6 @@
         
       
       
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    3-2. Camera Calibration
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -379,36 +389,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
-      
-        <li class="md-nav__item">
-  <a href="#1-corecodezip-homecorecode" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        1. corecode.zip 파일을 다운로드, 압축 풀고, Home/corecode로 디렉토리를 이동한다.
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
       
     </li>
   
@@ -457,6 +437,33 @@
   
   
     <li class="md-nav__item">
+      <a href="../container/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    4. Container
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../DoosanRobot/" class="md-nav__link">
         
   
@@ -464,7 +471,7 @@
   <span class="md-ellipsis">
     
   
-    4. Doosan Robot
+    5. Doosan Robot
   
 
     
@@ -497,25 +504,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
-      
-        <li class="md-nav__item">
-  <a href="#1-corecodezip-homecorecode" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        1. corecode.zip 파일을 다운로드, 압축 풀고, Home/corecode로 디렉토리를 이동한다.
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -532,13 +520,17 @@
 
 
 <h1 id="calibration"><strong>Calibration</strong></h1>
-<h3 id="1-corecodezip-homecorecode">1. corecode.zip 파일을 다운로드, 압축 풀고, Home/corecode로 디렉토리를 이동한다.</h3>
-<p><a href="downloads/corecodev0.94.zip">corecode.zip</a></p>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../images/corecode_directory.png" data-desc-position="bottom"><img alt="alt text" src="../images/corecode_directory.png"></a></p>
-<ul>
-<li>Camera Calibration, Voice Recording등 단위 기능 별 핵심 Source Code</li>
-<li>Python Code로 구현되어 있음(<strong>왜 ROS2 패키지가 아닌지 확인해보기</strong>)</li>
-</ul>
+<ol>
+<li>home/corecode/Calibration_Tutorial 디렉토리로 이동 </li>
+<li>Doosan Robot Bringup 실행하기(roboton alias 실행)  </li>
+<li>직접 교시 모드 service call 실행  </li>
+<li>data_recording.py 실행하기  </li>
+<li>화면 영상 Color가 보이도록 Device Number 수정  </li>
+<li>Checker Board 사진 20장 이상 촬영하기  </li>
+<li>handeye_calibratio.py 실행  </li>
+<li>T_gripper2camera.npy 파일 생성되었는지 확인  </li>
+<li>verify.py 실행해서 마우스로 화면 click하면 해당 위치로 로봇이 움직이는지 확인  </li>
+</ol>
 
 
 

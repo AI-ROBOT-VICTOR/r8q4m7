@@ -2,30 +2,38 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://ai-robot-victor.github.io/r8q4m7/</loc>
-         <lastmod>2026-08-16</lastmod>
+         <lastmod>2026-08-17</lastmod>
     </url>
     <url>
          <loc>https://ai-robot-victor.github.io/r8q4m7/DoosanRobot/</loc>
-         <lastmod>2026-08-16</lastmod>
+         <lastmod>2026-08-17</lastmod>
     </url>
     <url>
          <loc>https://ai-robot-victor.github.io/r8q4m7/calibration/</loc>
-         <lastmod>2026-08-16</lastmod>
+         <lastmod>2026-08-17</lastmod>
+    </url>
+    <url>
+         <loc>https://ai-robot-victor.github.io/r8q4m7/container/</loc>
+         <lastmod>2026-08-17</lastmod>
+    </url>
+    <url>
+         <loc>https://ai-robot-victor.github.io/r8q4m7/corecode/</loc>
+         <lastmod>2026-08-17</lastmod>
     </url>
     <url>
          <loc>https://ai-robot-victor.github.io/r8q4m7/installation/</loc>
-         <lastmod>2026-08-16</lastmod>
+         <lastmod>2026-08-17</lastmod>
     </url>
     <url>
          <loc>https://ai-robot-victor.github.io/r8q4m7/modbus/</loc>
-         <lastmod>2026-08-16</lastmod>
+         <lastmod>2026-08-17</lastmod>
     </url>
     <url>
          <loc>https://ai-robot-victor.github.io/r8q4m7/temp/</loc>
-         <lastmod>2026-08-16</lastmod>
+         <lastmod>2026-08-17</lastmod>
     </url>
     <url>
          <loc>https://ai-robot-victor.github.io/r8q4m7/voice_processing/</loc>
-         <lastmod>2026-08-16</lastmod>
+         <lastmod>2026-08-17</lastmod>
     </url>
 </urlset>
