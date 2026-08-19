@@ -7,13 +7,9 @@
         <meta name="author" content="이충현">
       
       
-        <link rel="canonical" href="https://ai-robot-victor.github.io/r8q4m7/installation/">
+        <link rel="canonical" href="https://ai-robot-victor.github.io/r8q4m7/calibration_backup/">
       
       
-        <link rel="prev" href="..">
-      
-      
-        <link rel="next" href="../environment/">
       
       
         
@@ -24,7 +20,7 @@
     
     
       
-        <title>1. 개발환경 설치 - 두산로보틱스 협동로봇 2 (Tutor 이 충 현)</title>
+        <title>Calibration - 두산로보틱스 협동로봇 2 (Tutor 이 충 현)</title>
       
     
     
@@ -87,7 +83,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#installation" class="md-skip">
+        <a href="#calibration" class="md-skip">
           Skip to content
         </a>
       
@@ -123,7 +119,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              1. 개발환경 설치
+              Calibration
             
           </span>
         </div>
@@ -229,37 +225,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    1. 개발환경 설치
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../installation/" class="md-nav__link">
         
   
   
@@ -275,48 +244,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
-      
-        <li class="md-nav__item">
-  <a href="#1-install_bashzip-case-2-1" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        1. install_bash.zip 파일 다운로드 후 아래 Case 2개 중 택1
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#2-bashrc" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        2. 설치 후 .bashrc 수정하기
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -864,36 +791,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
-      
-        <li class="md-nav__item">
-  <a href="#1-install_bashzip-case-2-1" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        1. install_bash.zip 파일 다운로드 후 아래 Case 2개 중 택1
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#2-bashrc" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        2. 설치 후 .bashrc 수정하기
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -909,52 +806,61 @@
 
 
 
-<h1 id="installation"><strong>Installation</strong></h1>
+<h1 id="calibration"><strong>Calibration</strong></h1>
+<ol>
+<li>
+home/corecode/Calibration_Tutorial 디렉토리로 이동
+</li>
+<li>
+Doosan Robot Bringup과 Service Call 실행하기
 <ul>
-<li><a href="../downloads/install_bash.zip">install_bash.zip</a>  </li>
+<li><strong>Terminal 창 1</strong> : <code>roboton</code> alias 실행</li>
+<li><strong>Terminal 창 2</strong> : <code>service call</code> 실행(직접 교시 모드 Service call)</li>
 </ul>
-<h4 id="1-install_bashzip-case-2-1">1. install_bash.zip 파일 다운로드 후 아래 Case 2개 중 택1</h4>
-<div class="indent1">
-  Case1. MSI Katana Notebook PC 또는 Doosan Robot Package와 ROS2 등 완전 설치  
-  <br>
-  <br>
-  </div>
-<div class="indent2">
-  • 압축 풀고 a01.sh부터 a11.sh까지 번호 순으로 Terminal 창에서 실행  
-  <br>
-  <br>
-  </div>
-<div class="indent1">
-  Case2. Doosan Robot Package와 ROS2등 기존 개발환경 유지  
-  <br>
-  <br>
-  </div>
-<div class="indent2">
-  • a01.sh ~ a11.sh 중에서 Nvidia와 ROS2 설치 bash는 실행하지 않음  
-  </div>
 
-<h4 id="2-bashrc">2. 설치 후 .bashrc 수정하기</h4>
-<ul>
-<li>.bashrc 아래 쪽에 붙여넣기  </li>
-</ul>
-<pre><code class="language-bash">source /opt/ros/jazzy/setup.bash
-source /usr/share/colcon_argcomplete/hook/colcon-argcomplete.bash
-export RMW_IMPLEMENTATION=rmw_cyclonedds_cpp
-export CYCLONEDDS_URI="file://$HOME/.config/cyclonedds/cyclonedds.xml"
-export ROS_DOMAIN_ID=99
-
-alias r='cd ~/cobot2_ws'
-alias s="source ~/cobot2_ws/install/setup.bash; echo \"source ~/cobot2_ws/install/setup.bash\""
-
-alias roboton="ros2 launch m0609_rg2_bringup bringup.launch.py mode:=real host:=192.168.1.100"
-ros2 run realsense2_camera realsense2_camera_node --ros-args \
-  -r __ns:=/ -r __node:=camera \
-  -p enable_color:=true -p enable_depth:=true \
-  -p depth_module.depth_profile:=848x480x30 -p rgb_camera.color_profile:=1280x720x30 \
-  -p align_depth.enable:=true -p enable_rgbd:=true -p enable_sync:=true \
-  -p pointcloud.enable:=true -p pointcloud.stream_filter:=2 \
-  -p enable_accel:=false -p enable_gyro:=false -p initial_reset:=true
+<pre><code class="language-bash">ros2 service call /dsr01/system/set_robot_mode dsr_msgs2/srv/SetRobotMode "robot_mode: 0"
 </code></pre>
+
+</li>
+<li>
+data_recording.py 실행하기
+</li>
+<li>
+영상에 Color Image가 보이도록 Device Number 수정
+<ul>
+<li>디바이스 번호 확인 명령어</li>
+</ul>
+
+<pre><code class="language-bash">v4l2-ctl --list-devices
+</code></pre>
+
+<ul>
+<li>번호에 대한 디바이스 정보 명령어</li>
+</ul>
+
+<pre><code class="language-bash">v4l2-ctl -d /dev/video0 --get-fmt-video
+</code></pre>
+
+</li>
+<li>data_recording.py 실행해서 화면 영상 Color가 보이면 Q 눌러서 사진 찍기</li>
+<br>
+<div class="indent1">
+<a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../images/calibration.png" data-desc-position="bottom"><img src="../images/calibration.png" alt="calibration" width="1080" data-no-glightbox=""></a>
+</div>
+<br>
+<li>
+Checker Board 사진 20장 이상 촬영하기
+</li>
+<li>
+handeye_calibration.py 실행
+</li>
+<li>
+T_gripper2camera.npy 파일 생성되었는지 확인
+</li>
+<li>
+Terminal 창에서 <code>python3 verify.py</code> 실행, 화면 click하면 해당 위치로 로봇이 움직이는지 확인
+</li>
+</ol>
 
 
 

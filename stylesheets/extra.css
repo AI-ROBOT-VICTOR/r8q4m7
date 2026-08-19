@@ -238,3 +238,10 @@
 [data-md-color-scheme="slate"] .md-typeset :not(pre) > code {
     color: #F5F5F5 !important;
 }
+
+/* 본문 구분선 */
+.md-content hr {
+    border: 0;
+    border-top: 2px solid #1565c0;
+    margin: 20px 0;
+}

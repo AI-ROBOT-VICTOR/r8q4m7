@@ -368,7 +368,7 @@
   <span class="md-ellipsis">
     
   
-    3-1. modbus
+    3-1. modbus 통신
   
 
     
@@ -648,6 +648,24 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pick and Place 구조
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -664,6 +682,58 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+      
+        <li class="md-nav__item">
+  <a href="#vlaphysical-ai-pipeline-sample" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        VLA/Physical AI Pipeline Sample
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-system-architecture" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        협동로봇 2 System Architecture
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-machanism-and-process" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        협동로봇 2 Machanism and Process
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -807,6 +877,47 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+      
+        <li class="md-nav__item">
+  <a href="#vlaphysical-ai-pipeline-sample" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        VLA/Physical AI Pipeline Sample
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-system-architecture" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        협동로봇 2 System Architecture
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-machanism-and-process" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        협동로봇 2 Machanism and Process
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -823,7 +934,24 @@
 
 
 <h1 id="pick-and-place"><strong>Pick and Place 실행</strong></h1>
+<h4 id="vlaphysical-ai-pipeline-sample">VLA/Physical AI Pipeline Sample</h4>
+<p><strong>1) Natural Language(LLM) ➜ 2)Semantic Parsing ➜ 3)Scene Understanding ➜ 4)Task Planning ➜ 5)Robot Execution</strong></p>
+<p><strong>음성 명령 : 빨간색 물체를 잡아서 오른쪽에 놓아줘</strong>  </p>
+<pre><code class="language-json">{
+  "action": "pick_and_place",
+  "object": {
+    "color": "red",
+    "type": "object"
+  },
+  "target": {
+    "position": "right"
+  }
+}
+</code></pre>
+<h4 id="2-system-architecture">협동로봇 2 System Architecture</h4>
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../images/container_hierarchy.jpg" data-desc-position="bottom"><img alt="alt text" src="../images/container_hierarchy.jpg"></a></p>
+<hr>
+<h4 id="2-machanism-and-process">협동로봇 2 Machanism and Process</h4>
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../images/pipeline.jpg" data-desc-position="bottom"><img alt="alt text" src="../images/pipeline.jpg"></a></p>
 
 

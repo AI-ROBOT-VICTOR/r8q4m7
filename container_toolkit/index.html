@@ -368,7 +368,7 @@
   <span class="md-ellipsis">
     
   
-    3-1. modbus
+    3-1. modbus 통신
   
 
     
@@ -824,20 +824,22 @@
 
 <h1 id="container-toolkit"><strong>Container Toolkit</strong></h1>
 <ol>
-<li>home/cobot2/src 디렉토리로 이동  <ul>
+<li>
+<p><strong>home/cobot2/src 디렉토리로 이동</strong>  </p>
+<ul>
 <li><a href="../downloads/cobot2.zip">cobot2.zip</a>  </li>
 </ul>
 </li>
 <li>
-<p>cobot2.zip 다운로드 후 아래와 같이 압축풀고 디렉토리 구조 만들기<br>
+<p><strong>cobot2.zip 다운로드 후 아래와 같이 압축풀고 디렉토리 구조 만들기</strong><br>
 <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../images/cobot2ws_src.png" data-desc-position="bottom"><img alt="cobot2_ws\src 디렉토리" src="../images/cobot2ws_src.png"></a><br>
 <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../images/src_cobot2.png" data-desc-position="bottom"><img alt="src\cobot2 디렉토리" src="../images/src_cobot2.png"></a>  </p>
 </li>
 <li>
-<p><code>OPENAI_API_KEY</code>가 들어 있는 <code>.env</code> 복사해두기  </p>
+<p><strong><code>OPENAI_API_KEY</code>가 들어 있는 <code>.env</code> 복사해두기</strong>  </p>
 </li>
 <li>
-<p>ROS2 Jazzy에 필요한 의존성 데이터베이스 최신 상태로 갱신 및 자동설치<br>
+<p><strong>ROS2 Jazzy에 필요한 의존성 데이터베이스 최신 상태로 갱신 및 자동설치</strong><br>
     • 최신 상태 갱신    </p>
 <pre><code>rosdep update
 </code></pre>
@@ -847,18 +849,18 @@
 </code></pre>
 </li>
 <li>
-<p>Object Detection 패키지 제외 전체 Build  </p>
+<p><strong>Object Detection 패키지 제외 전체 Build</strong>  </p>
 <pre><code>colcon build --packages-skip object_detection
 </code></pre>
 </li>
 <li>
-<p>패키지 검증 </p>
+<p><strong>패키지 검증</strong> </p>
 <pre><code>ros2 pkg list | grep -E \
 "m0609_rg2_bringup|onrobot_rg_control|dsr_bringup2|voice_processing|robot_control"
 </code></pre>
 </li>
 <li>
-<p>NVIDIA Container Toolkit 설치<br>
+<p><strong>NVIDIA Container Toolkit 설치</strong><br>
     • APT 저장소의 GPG Key저장할 디렉토리 생성</p>
 <pre><code>sudo install -d -m 0755 /etc/apt/keyrings
 </code></pre>

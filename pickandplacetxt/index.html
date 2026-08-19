@@ -368,7 +368,7 @@
   <span class="md-ellipsis">
     
   
-    3-1. modbus
+    3-1. modbus 통신
   
 
     
@@ -825,22 +825,22 @@
 <h1 id="pick-and-place"><strong>Pick and Place 실행</strong></h1>
 <ol>
 <li>
-<p>Terminal 1번 roboton Alias 실행(Doosan Robot Bringup Launch)</p>
+<p><strong>Terminal 1번 roboton Alias 실행(Doosan Robot Bringup Launch)</strong></p>
 <pre><code>roboton
 </code></pre>
 </li>
 <li>
-<p>Terminal 2번 realsense Alias 실행(Realsense Launch)</p>
+<p><strong>Terminal 2번 realsense Alias 실행(Realsense Launch)</strong></p>
 <pre><code>realsense
 </code></pre>
 </li>
 <li>
-<p>Termanal 3번 Yolo-Detection Container Start</p>
+<p><strong>Termanal 3번 Yolo-Detection Container Start</strong></p>
 <pre><code>docker start yolo-detection
 </code></pre>
 </li>
 <li>
-<p>Terminal 3번 Yolo-Detection Container로 들어가기<br>
+<p><strong>Terminal 3번 Yolo-Detection Container로 들어가기</strong><br>
     • yolo-detection Container로 들어가기  </p>
 <pre><code>docker exec -it yolo-detection bash
 </code></pre>
@@ -852,7 +852,7 @@
 </code></pre>
 </li>
 <li>
-<p>Terminal 4번 Robot_Control 실행</p>
+<p><strong>Terminal 4번 Robot_Control 실행</strong></p>
 <pre><code>ros2 run robot_control robot_control
 </code></pre>
 </li>
