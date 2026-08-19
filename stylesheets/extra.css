@@ -109,6 +109,11 @@
    3-3. Voice Processing
    ========================================================= */
 
+   .md-content h3 {
+    line-height: 1.0;
+    margin-top: 0.8em;
+    margin-bottom: 0.4em;
+}
 /* Light Mode */
 [data-md-color-scheme="default"] .md-content h3 a {
     color: #1565c0 !important;
@@ -271,4 +276,20 @@
 
 .md-content ol > li::marker {
     font-weight: 700;
+}
+
+.md-content h4 {
+    font-size: 1em;
+    line-height: 1.5;
+    margin-top: 0.35em;
+    margin-bottom: 0.35em;
+}
+
+.md-content h4 a {
+    color: #0066FF !important;
+    font-weight: 700;
+}
+
+.md-content h4 a:hover {
+    color: #E65100 !important;
 }
