@@ -241,24 +241,6 @@
         
       
       
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    1. 개발환경 설치
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -275,47 +257,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
-      
-        <li class="md-nav__item">
-  <a href="#1-install_bashzip-case-2-1" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        1. install_bash.zip 파일 다운로드 후 아래 Case 2개 중 택1
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#2-bashrc" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        2. 설치 후 .bashrc 수정하기
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
       
     </li>
   
@@ -864,36 +805,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
-      
-        <li class="md-nav__item">
-  <a href="#1-install_bashzip-case-2-1" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        1. install_bash.zip 파일 다운로드 후 아래 Case 2개 중 택1
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#2-bashrc" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        2. 설치 후 .bashrc 수정하기
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -910,33 +821,31 @@
 
 
 <h1 id="installation"><strong>Installation</strong></h1>
+<ol>
+<li>
+<p><strong>install_bash.zip 파일 다운로드 후 아래 <span class="case-label">Case 1</span> 또는 <span class="case-label">Case 2</span> 중 <span class="case-label">택 1 (주의!!!)</span></strong>  </p>
 <ul>
-<li><strong><a href="../downloads/install_bash.zip">install_bash.zip</a></strong>  </li>
-</ul>
-<h4 id="1-install_bashzip-case-2-1">1. install_bash.zip 파일 다운로드 후 아래 Case 2개 중 택1</h4>
-<div class="indent1">
-  Case1. MSI Katana Notebook PC 또는 Doosan Robot Package와 ROS2 등 완전 설치  
-  <br>
-  <br>
-  </div>
-<div class="indent2">
-  • 압축 풀고 a01.sh부터 a11.sh까지 번호 순으로 Terminal 창에서 실행  
-  <br>
-  <br>
-  </div>
-<div class="indent1">
-  Case2. Doosan Robot Package와 ROS2등 기존 개발환경 유지  
-  <br>
-  <br>
-  </div>
-<div class="indent2">
-  • a01.sh ~ a11.sh 중에서 Nvidia와 ROS2 설치 bash는 실행하지 않음  
-  </div>
-
-<h4 id="2-bashrc">2. 설치 후 .bashrc 수정하기</h4>
+<li>
+<p><strong><a href="../downloads/install_bash.zip">install_bash.zip</a></strong>    </p>
+</li>
+<li>
+<p><strong><span class="case-label">Case 1</span> MSI Katana Notebook PC 또는 Doosan Robot Package와 ROS2 등 완전 설치</strong>  </p>
 <ul>
-<li>.bashrc 아래 쪽에 붙여넣기  </li>
+<li>압축 풀고 a01.sh부터 a11.sh까지 번호 순으로 Terminal 창에서 실행</li>
 </ul>
+</li>
+<li>
+<p><strong><span class="case-label">Case 2</span> Doosan Robot Package와 ROS2 등 기존 개발환경 유지</strong>  </p>
+<ul>
+<li>a01.sh ~ a11.sh 중에서 Nvidia와 ROS2 설치 bash는 실행하지 않음</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>.bashrc 아래 쪽에 추가</strong></p>
+</li>
+</ol>
 <pre><code class="language-bash">source /opt/ros/jazzy/setup.bash
 source /usr/share/colcon_argcomplete/hook/colcon-argcomplete.bash
 export RMW_IMPLEMENTATION=rmw_cyclonedds_cpp

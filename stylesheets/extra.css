@@ -51,6 +51,7 @@
     color: #ffffff;
 }
 
+
 /* =========================================================
    Navigation
    ========================================================= */
@@ -102,33 +103,42 @@
 
 
 /* =========================================================
-   본문 h3 링크
-   예:
-   3-1. Modbus 통신
-   3-2. Camera Calibration
-   3-3. Voice Processing
+   본문 링크
+   모든 본문 링크 기본 색상
    ========================================================= */
 
-   .md-content h3 {
+.md-content a {
+    color: #0066FF !important;
+}
+
+
+/* =========================================================
+   본문 링크 Hover
+   ========================================================= */
+
+.md-content a:hover {
+    color: #00A8FF !important;
+}
+
+
+/* =========================================================
+   본문 h3
+   ========================================================= */
+
+.md-content h3 {
     line-height: 1.0;
     margin-top: 0.8em;
     margin-bottom: 0.4em;
 }
-/* Light Mode */
-[data-md-color-scheme="default"] .md-content h3 a {
-    color: #1565c0 !important;
+
+/* h3 링크 */
+.md-content h3 a {
+    color: #0066FF !important;
     font-weight: 700;
 }
 
-/* Dark Mode */
-[data-md-color-scheme="slate"] .md-content h3 a {
-    color: #1565c0 !important;
-    font-weight: 700;
-}
-
-/* 본문 링크 Hover */
 .md-content h3 a:hover {
-    color: #e65100 !important;
+    color: #00A8FF !important;
 }
 
 
@@ -257,6 +267,11 @@
     color: #F5F5F5 !important;
 }
 
+
+/* =========================================================
+   Inline Code
+   ========================================================= */
+
 /* Light Mode */
 [data-md-color-scheme="default"] .md-typeset :not(pre) > code {
     color: #111111 !important;
@@ -267,16 +282,30 @@
     color: #F5F5F5 !important;
 }
 
-/* 본문 구분선 */
+
+/* =========================================================
+   본문 구분선
+   ========================================================= */
+
 .md-content hr {
     border: 0;
     border-top: 2px solid #1565c0;
     margin: 20px 0;
 }
 
+
+/* =========================================================
+   Ordered List
+   ========================================================= */
+
 .md-content ol > li::marker {
     font-weight: 700;
 }
+
+
+/* =========================================================
+   본문 h4
+   ========================================================= */
 
 .md-content h4 {
     font-size: 1em;
@@ -291,5 +320,16 @@
 }
 
 .md-content h4 a:hover {
-    color: #E65100 !important;
+    color: #00A8FF !important;
 }
+
+
+/* =========================================================
+   Case Label
+   ========================================================= */
+
+.case-label {
+    color: #0066FF;
+    font-weight: 800;
+}
+

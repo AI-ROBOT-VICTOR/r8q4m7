@@ -51,30 +51,53 @@
     color: #ffffff;
 }
 
-
 /* =========================================================
    Navigation
    ========================================================= */
 
-/* Light Mode */
+/* 기본 Navigation - Light Mode */
 [data-md-color-scheme="default"] .md-nav__link {
     color: #333333 !important;
 }
 
-/* Dark Mode */
+/* 기본 Navigation - Dark Mode */
 [data-md-color-scheme="slate"] .md-nav__link {
     color: #ffffff !important;
 }
 
-/* Hover */
-.md-nav__link:hover {
-    color: #1976d2 !important;
+
+/* =========================================================
+   현재 선택된 메뉴
+   ========================================================= */
+
+/* Light Mode */
+[data-md-color-scheme="default"] .md-nav__link--active {
+    color: #1565c0 !important;
+    font-weight: 700 !important;
 }
 
-/* Active */
-.md-nav__link--active {
-    color: #1976d2 !important;
-    font-weight: bold !important;
+/* Dark Mode */
+[data-md-color-scheme="slate"] .md-nav__link--active {
+    color: #1565c0 !important;
+    font-weight: 700 !important;
+}
+
+
+/* =========================================================
+   마우스를 올렸을 때
+   ========================================================= */
+
+.md-nav__link:hover {
+    color: #1565c0 !important;
+}
+
+
+/* =========================================================
+   현재 선택된 메뉴에 마우스를 올렸을 때도 동일한 색상
+   ========================================================= */
+
+.md-nav__link--active:hover {
+    color: #1565c0 !important;
 }
 
 
@@ -86,6 +109,11 @@
    3-3. Voice Processing
    ========================================================= */
 
+   .md-content h3 {
+    line-height: 1.0;
+    margin-top: 0.8em;
+    margin-bottom: 0.4em;
+}
 /* Light Mode */
 [data-md-color-scheme="default"] .md-content h3 a {
     color: #1565c0 !important;
@@ -250,3 +278,23 @@
     font-weight: 700;
 }
 
+.md-content h4 {
+    font-size: 1em;
+    line-height: 1.5;
+    margin-top: 0.35em;
+    margin-bottom: 0.35em;
+}
+
+.md-content h4 a {
+    color: #0066FF !important;
+    font-weight: 700;
+}
+
+.md-content h4 a:hover {
+    color: #E65100 !important;
+}
+
+.case-label {
+    color: #0066FF;
+    font-weight: 800;
+}
