@@ -161,6 +161,11 @@
     color: #ffffff;
 }
 
+
+/* =========================================================
+   Table
+   ========================================================= */
+
 .md-typeset table {
     border: 2px solid var(--md-default-fg-color--light);
 }
@@ -174,34 +179,41 @@
     text-align: center;
 }
 
+
+/* =========================================================
+   이미지 워터마크
+   ========================================================= */
+
 .watermark-image {
-  position: relative;
-  display: inline-block;
-  overflow: hidden;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
 }
 
 .watermark-image img {
-  display: block;
+    display: block;
 }
 
 .watermark-image::after {
-  content: "이  충  현";
-  position: absolute;
+    content: "이  충  현";
 
-  top: 50%;
-  left: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
 
-  transform: translate(-50%, -50%) rotate(-30deg);
+    transform: translate(-50%, -50%) rotate(-30deg);
 
-  color: rgba(128, 128, 128, 0.08);
+    color: rgba(128, 128, 128, 0.08);
 
-  font-size: 70px;
-  font-weight: bold;
-  white-space: nowrap;
+    font-size: 70px;
+    font-weight: bold;
 
-  pointer-events: none;
-  user-select: none;
+    white-space: nowrap;
+
+    pointer-events: none;
+    user-select: none;
 }
+
 
 /* =========================================================
    본문 글자색
@@ -216,3 +228,25 @@
 [data-md-color-scheme="slate"] .md-content {
     color: #F5F5F5 !important;
 }
+
+/* Light Mode */
+[data-md-color-scheme="default"] .md-typeset :not(pre) > code {
+    color: #111111 !important;
+}
+
+/* Dark Mode */
+[data-md-color-scheme="slate"] .md-typeset :not(pre) > code {
+    color: #F5F5F5 !important;
+}
+
+/* 본문 구분선 */
+.md-content hr {
+    border: 0;
+    border-top: 2px solid #1565c0;
+    margin: 20px 0;
+}
+
+.md-content ol > li::marker {
+    font-weight: 700;
+}
+
