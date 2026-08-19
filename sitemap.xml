@@ -2,50 +2,66 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://ai-robot-victor.github.io/r8q4m7/</loc>
-         <lastmod>2026-08-17</lastmod>
-    </url>
-    <url>
-         <loc>https://ai-robot-victor.github.io/r8q4m7/DoosanRobot/</loc>
-         <lastmod>2026-08-17</lastmod>
+         <lastmod>2026-08-19</lastmod>
     </url>
     <url>
          <loc>https://ai-robot-victor.github.io/r8q4m7/calibration/</loc>
-         <lastmod>2026-08-17</lastmod>
+         <lastmod>2026-08-19</lastmod>
     </url>
     <url>
-         <loc>https://ai-robot-victor.github.io/r8q4m7/container/</loc>
-         <lastmod>2026-08-17</lastmod>
+         <loc>https://ai-robot-victor.github.io/r8q4m7/container_main/</loc>
+         <lastmod>2026-08-19</lastmod>
+    </url>
+    <url>
+         <loc>https://ai-robot-victor.github.io/r8q4m7/container_setup/</loc>
+         <lastmod>2026-08-19</lastmod>
+    </url>
+    <url>
+         <loc>https://ai-robot-victor.github.io/r8q4m7/container_toolkit/</loc>
+         <lastmod>2026-08-19</lastmod>
     </url>
     <url>
          <loc>https://ai-robot-victor.github.io/r8q4m7/corecode/</loc>
-         <lastmod>2026-08-17</lastmod>
+         <lastmod>2026-08-19</lastmod>
     </url>
     <url>
          <loc>https://ai-robot-victor.github.io/r8q4m7/doosan_robot/</loc>
-         <lastmod>2026-08-17</lastmod>
+         <lastmod>2026-08-19</lastmod>
     </url>
     <url>
          <loc>https://ai-robot-victor.github.io/r8q4m7/environment/</loc>
-         <lastmod>2026-08-17</lastmod>
+         <lastmod>2026-08-19</lastmod>
     </url>
     <url>
          <loc>https://ai-robot-victor.github.io/r8q4m7/installation/</loc>
-         <lastmod>2026-08-17</lastmod>
+         <lastmod>2026-08-19</lastmod>
     </url>
     <url>
          <loc>https://ai-robot-victor.github.io/r8q4m7/modbus/</loc>
-         <lastmod>2026-08-17</lastmod>
+         <lastmod>2026-08-19</lastmod>
     </url>
     <url>
-         <loc>https://ai-robot-victor.github.io/r8q4m7/pickandplace/</loc>
-         <lastmod>2026-08-17</lastmod>
+         <loc>https://ai-robot-victor.github.io/r8q4m7/pickandplace_main/</loc>
+         <lastmod>2026-08-19</lastmod>
+    </url>
+    <url>
+         <loc>https://ai-robot-victor.github.io/r8q4m7/pickandplacetxt/</loc>
+         <lastmod>2026-08-19</lastmod>
+    </url>
+    <url>
+         <loc>https://ai-robot-victor.github.io/r8q4m7/pickandplacevoice/</loc>
+         <lastmod>2026-08-19</lastmod>
     </url>
     <url>
          <loc>https://ai-robot-victor.github.io/r8q4m7/rokey_utility/</loc>
-         <lastmod>2026-08-17</lastmod>
+         <lastmod>2026-08-19</lastmod>
     </url>
     <url>
          <loc>https://ai-robot-victor.github.io/r8q4m7/voice_processing/</loc>
-         <lastmod>2026-08-17</lastmod>
+         <lastmod>2026-08-19</lastmod>
+    </url>
+    <url>
+         <loc>https://ai-robot-victor.github.io/r8q4m7/yolo_train/</loc>
+         <lastmod>2026-08-19</lastmod>
     </url>
 </urlset>
