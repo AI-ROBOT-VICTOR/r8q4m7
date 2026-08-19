@@ -824,58 +824,37 @@
 
 <h1 id="calibration"><strong>Calibration</strong></h1>
 <ol>
+<li><strong>home/corecode/Calibration_Tutorial 디렉토리로 이동</strong>  </li>
 <li>
-home/corecode/Calibration_Tutorial 디렉토리로 이동
-</li>
-<li>
-Doosan Robot Bringup과 Service Call 실행하기
-<ul>
-<li><strong>Terminal 창 1</strong> : <code>roboton</code> alias 실행</li>
-<li><strong>Terminal 창 2</strong> : <code>service call</code> 실행(직접 교시 모드 Service call)</li>
-</ul>
-
-<pre><code class="language-bash">ros2 service call /dsr01/system/set_robot_mode dsr_msgs2/srv/SetRobotMode "robot_mode: 0"
+<p><strong>Doosan Robot Bringup과 Service Call 실행하기</strong> <br>
+    • Terminal 창 1: <code>roboton</code> alias 실행<br>
+    • Terminal 창 2: <code>service call</code> 실행(직접 교시 모드 Service call)  </p>
+<pre><code>ros2 service call /dsr01/system/set_robot_mode dsr_msgs2/srv/SetRobotMode "robot_mode: 0"
 </code></pre>
-
 </li>
 <li>
-data_recording.py 실행하기
+<p><strong>data_recording.py 실행하기</strong>   </p>
 </li>
 <li>
-영상에 Color Image가 보이도록 Device Number 수정
-<ul>
-<li>디바이스 번호 확인 명령어</li>
-</ul>
-
-<pre><code class="language-bash">v4l2-ctl --list-devices
+<p><strong>영상에 Color Image가 보이도록 Device Number 수정</strong><br>
+   • 디바이스 번호 확인 명령어  </p>
+<pre><code>v4l2-ctl --list-devices
 </code></pre>
-
-<ul>
-<li>번호에 대한 디바이스 정보 명령어</li>
-</ul>
-
-<pre><code class="language-bash">v4l2-ctl -d /dev/video0 --get-fmt-video
+<p>• 번호에 대한 디바이스 정보 명령어</p>
+<pre><code>v4l2-ctl -d /dev/video0 --get-fmt-video
 </code></pre>
-
-</li>
-<li>data_recording.py 실행해서 화면 영상 Color가 보이면 Q 눌러서 사진 찍기</li>
-<br>
-<div class="indent1">
-<a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../images/calibration.png" data-desc-position="bottom"><img src="../images/calibration.png" alt="calibration" width="1080" data-no-glightbox=""></a>
-</div>
-<br>
-<li>
-Checker Board 사진 20장 이상 촬영하기
 </li>
 <li>
-handeye_calibration.py 실행
+<p><strong>data_recording.py 실행해서 화면 영상 Color가 보이면 Q 눌러서 사진 찍기</strong></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../images/calibration.png" data-desc-position="bottom"><img alt="alt text" src="../images/calibration.png"></a></p>
 </li>
 <li>
-T_gripper2camera.npy 파일 생성되었는지 확인
+<p><strong>Checker Board 사진 20장 이상 촬영하기</strong>  </p>
 </li>
-<li>
-Terminal 창에서 <code>python3 verify.py</code> 실행, 화면 click하면 해당 위치로 로봇이 움직이는지 확인
-</li>
+<li><strong>handeye_calibration.py 실행</strong></li>
+<li><strong>T_gripper2camera.npy 파일 생성되었는지 확인</strong></li>
+<li><strong>Terminal 창에서 <code>python3 verify.py</code>실행</strong></li>
+<li><strong>화면 click하면 해당 위치로 로봇이 움직이는지 확인</strong></li>
 </ol>
 
 

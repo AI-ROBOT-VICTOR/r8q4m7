@@ -824,17 +824,17 @@
 
 <h1 id="voice-processing"><strong>Voice Processing</strong></h1>
 <ol>
-<li>home/corecode/VoiceProcessing 디렉토리로 이동  </li>
+<li><strong>home/corecode/VoiceProcessing 디렉토리로 이동</strong>  </li>
 <li>
-<p>mic_test.py로 Microphone 작동 확인  </p>
+<p><strong>mic_test.py로 Microphone 작동 확인</strong>  </p>
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../images/mic_test.png" data-desc-position="bottom"><img alt="alt text" src="../images/mic_test.png"></a>   </p>
 </li>
 <li>
-<p>Wakeup_word.py로 Hello ROKEY(헬로우 로키)라고 말하면 인식되는지 확인  </p>
+<p><strong>Wakeup_word.py로 Hello ROKEY(헬로우 로키)라고 말하면 인식되는지 확인</strong>  </p>
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../images/hello_rokey.png" data-desc-position="bottom"><img alt="alt text" src="../images/hello_rokey.png"></a>  </p>
 </li>
 <li>
-<p>OPENAI_API_KEY 입력하기  </p>
+<p><strong>OPENAI_API_KEY 입력하기</strong>  </p>
 <ul>
 <li>조장에게 배포한 API key 복사 후 [.env] 파일에 붙여넣기  </li>
 <li>OPENAI_API_KEY(만료되면 재발급 받은 코드를 입력해야 API 사용할 수 있음)<br>
@@ -845,31 +845,31 @@
 </ul>
 </li>
 <li>
-<p>STT(Speech To Text) 실행해서 음성이 Text로 변환되는지 확인  </p>
+<p><strong>STT(Speech To Text) 실행해서 음성이 Text로 변환되는지 확인</strong>  </p>
 </li>
 <li>
-<p>Keyword extraction(키워드 추출)<br>
+<p><strong>Keyword extraction(키워드 추출)</strong><br>
     </p><div class="indent1">
-    6-1. 키워드 추출
+    6-1. <strong>키워드 추출</strong>
     </div><p></p>
 <p></p><div class="indent2">
   • 자연어에서 키워드 추출(ex. 망치가져와 → 망치)<br>
   • 도구리스트를 수정하여 도구 추가 및 삭제 가능<br>
 </div><p></p>
 <p></p><div class="indent1">
-6-2. GPT-4o(Langchain 기반 LLM)<br>
+6-2. <strong>GPT-4o(Langchain 기반 LLM)</strong><br>
 </div>
 <div class="indent2">
   • Prompt Engineering<br>
   • LLMChain<br>
 </div><p></p>
 <p></p><div class="indent1">
-6-3. Tool 등록  <br>
+6-3. <strong>Tool 등록</strong>  <br>
 </div>
 <div class="indent2">
    •  <code>"hammer"</code>와 <code>"pos1"</code> 단어 추출<br>
    •  <code>output_message</code> 수정<br>
-   •  keyword_extraction.py의 <strong>output_message</strong> 변수 내용을 적절히 수정  <p></p>
+   •  keyword_extraction.py의 <code>output_message</code> 변수 내용을 적절히 수정  <p></p>
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../images/keyword_extraction.png" data-desc-position="bottom"><img alt="alt text" src="../images/keyword_extraction.png"></a><br>
 </p></div><p></p>
 </li>
